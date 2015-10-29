@@ -1,0 +1,27 @@
+{
+  "name": "max-subarray",
+  "main": "max-subarray.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/miguelmota/max-subarray",
+  "authors": [
+    "Miguel Mota <hello@miguelmota.com>"
+  ],
+  "description": "Find the continuous subarray within an array of numbers which has the largest sum.",
+  "keywords": [
+    "max",
+    "subarray",
+    "continuous",
+    "sum",
+    "kandane",
+    "algorithm",
+    "math"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "license": "MIT"
+}
