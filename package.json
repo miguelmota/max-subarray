@@ -1,6 +1,6 @@
 {
   "name": "max-subarray",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Find the continuous subarray within an array of numbers which has the largest sum.",
   "main": "max-subarray.js",
   "directories": {

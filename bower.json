@@ -1,7 +1,7 @@
 {
   "name": "max-subarray",
   "main": "max-subarray.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/miguelmota/max-subarray",
   "authors": [
     "Miguel Mota <hello@miguelmota.com>"

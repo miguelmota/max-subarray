@@ -6,23 +6,32 @@
       return [];
     }
 
-    var sum = array[0];
-    var max = array[0];
-    var stack = [];
+    var maxEndingHere = array[0];
+    var maxSoFar = array[0];
+    var maxStarts = [];
+    var maxStart = 0;
+    var maxEnd = 0;
 
-    for (var i = 1; i < array.length; i++) {
-      sum = Math.max(sum + array[i], array[i]);
-      max = Math.max(max, sum);
-      if (sum === max) {
-        if (i === 1) {
-          stack.push(0);
-        }
+    for (var i = 1, l = array.length; i < l; i++) {
+      maxEndingHere = Math.max(maxEndingHere + array[i], array[i]);
 
-        stack.push(i);
+      if (maxEndingHere === array[i]) {
+        maxStarts.push(i);
+        maxStart = i;
+      }
+
+      maxSoFar = Math.max(maxSoFar, maxEndingHere);
+
+      if (maxSoFar === maxEndingHere) {
+        maxEnd = i;
       }
     }
 
-    return array.slice(stack[0], stack[stack.length - 1] + 1);
+    if (maxStart > maxEnd) {
+      maxStart = maxStarts[0];
+    }
+
+    return array.slice(maxStart, maxEnd+1);
   }
 
   maxSubarray._isNumber = function(v) {
