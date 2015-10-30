@@ -1,6 +1,6 @@
 # max-subarray
 
-> Find the continuous subarray within an array of numbers which has the largest sum. Also known as the [Maximum Subarray Problem](https://en.wikipedia.org/wiki/Maximum_subarray_problem).
+> Find the continuous subarray within an array of numbers which has the largest sum. Also known as the [Maximum Subarray Problem](https://en.wikipedia.org/wiki/Maximum_subarray_problem). Implementation composed of Kadane's algorithm.
 
 # Install
 

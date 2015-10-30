@@ -8,16 +8,17 @@
 
     var sum = array[0];
     var max = array[0];
-    var stack = [0];
+    var stack = [];
 
     for (var i = 1; i < array.length; i++) {
       sum = Math.max(sum + array[i], array[i]);
       max = Math.max(max, sum);
-
       if (sum === max) {
+        if (i === 1) {
+          stack.push(0);
+        }
+
         stack.push(i);
-      } else if (sum !== max && i === 1) {
-        stack.pop();
       }
     }
 
